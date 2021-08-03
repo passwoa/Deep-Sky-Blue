@@ -20,3 +20,8 @@ table {
     width: 250px;
     margin: 200px auto;
 }
+
+.btn {
+  margin-top: 30px;
+  margin-left: 10px;
+}
