@@ -4,86 +4,147 @@
 
 <head>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
 
-<title>Tic Tac Toe Website</title>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tic Tac Toe</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">2 Player</a>
-          <a class="nav-link" href="#">AI</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Tic Tac Toe Website</title>
 </head>
-
-<body>
-    <!DOCTYPE html>
-
-    <html>
-    
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    
-        <title>Tic Tac Toe Website</title>
-        <h3 style="transform: translateX(20px);">Tic Tac Toe</h3>
-        <h1><h1>
-    </head>
     
         <body>
-            <script type="text/javascript">
-                    function firstfun() {
-                        document.getElementById("first").innerHTML = "X";
-                    }
-                    function secondfun() {
-                        document.getElementById("second").innerHTML = "O";
-                    }
-                    function thirdfun() {
-                        document.getElementById("third").innerHTML = "X";
-                    }
-                    function fourthfun() {
-                        document.getElementById("fourth").innerHTML = "O";
-                    }
-                    function fifthfun() {
-                        document.getElementById("fifth").innerHTML = "X";
-                    }
-                    function sixthfun() {
-                        document.getElementById("sixth").innerHTML = "O";
-                    }
-                    function seventhfun() {
-                        document.getElementById("seventh").innerHTML = "X";
-                    }
-                    function eighthfun() {
-                        document.getElementById("eigth").innerHTML = "O";
-                    }
-                    function ninthfun() {
-                        document.getElementById("ninth").innerHTML = "X";
-                    }
-            </script>
-            <div style="transform: translateX(20px);">
-                <button id="first" onclick="firstfun()" class="btn btn-default btn-lg">-</button>
-                
-                <button id="second" onclick="secondfun()" class="btn btn-default btn-lg">-</button>
-                <button id="third" onclick="thirdfun()" class="btn btn-default btn-lg">-</button>
-                <h1><h1>
-                <button id="fourth" onclick="fourthfun()" class="btn btn-default btn-lg">-</button>
-                <button id="fifth" onclick="fifthfun()" class="btn btn-default btn-lg">-</button>
-                <button id="sixth" onclick="sixthfun()" class="btn btn-default btn-lg">-</button>
-                <h1><h1>
-                <button id="seventh" onclick="seventhfun()" class="btn btn-default btn-lg">-</button>
-                <button id="eigth" onclick="eighthfun()" class="btn btn-default btn-lg">-</button>
-                <button id="ninth" onclick="ninthfun()" class="btn btn-default btn-lg">-</button>
+          <h3 style="transform: translateX(20px);">Tic Tac Toe</h3>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tic Tac Toe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">2 Player</a>
+                    <a class="nav-link" href="#">AI</a>
+                  </div>
                 </div>
+              </div>
+            </nav>
+            <div class="gameContainer">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-default btn-lg hori vert">-</button>      
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-default btn-lg hori vert">-</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-default btn-lg hori vert">-</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-default btn-lg hori vert">-</button>      
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-default btn-lg hori vert">-</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-default btn-lg hori vert">-</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-default btn-lg hori vert">-</button>      
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-default btn-lg hori vert">-</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-default btn-lg hori vert">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <script type="text/javascript">
+                var currentPlayerIsX = true;
+                for(let button of document.getElementsByClassName("btn")){
+                  button.addEventListener("click", takeTurn, false);
+                }
+                function takeTurn(){
+                  if(currentPlayerIsX){
+                    this.textContent = "X";
+                  }else{
+                    this.textContent = "O";
+                  }
+                  checkForWin();
+                  currentPlayerIsX = !currentPlayerIsX;
+                }
+                function checkForWin(){
+                  var playerXWon = false;
+                  var buttons = document.getElementsByClassName("btn");
+                  if(buttons[0].textContent == buttons[1].textContent && buttons[0].textContent == buttons[2].textContent){
+                  
+                  }
+                  if(buttons[0].textContent == buttons[3].textContent && buttons[0].textContent == buttons[6].textContent){
+
+                  }
+                  if(buttons[3].textContent == buttons[5].textContent && buttons[3].textContent == buttons[6].textContent){
+
+                  }     
+                  if(buttons[6].textContent == buttons[7].textContent && buttons[6].textContent == buttons[8].textContent){
+
+                  }                               
+                  if(buttons[1].textContent == buttons[4].textContent && buttons[1].textContent == buttons[7].textContent){
+
+                  }
+                  if(buttons[2].textContent == buttons[5].textContent && buttons[2].textContent == buttons[8].textContent){
+
+                  }
+                  if(buttons[0].textContent == buttons[4].textContent && buttons[0].textContent == buttons[8].textContent){
+                  
+                  }
+                  if(buttons[2].textContent == buttons[4].textContent && buttons[0].textContent == buttons[6].textContent){
+
+                  }
+                }
+                
+              
+                // function firstfun() {
+                //     document.getElementById("first").innerHTML = "X";
+                // }
+                // function secondfun() {
+                //     document.getElementById("second").innerHTML = "O";
+                // }
+                // function thirdfun() {
+                //     document.getElementById("third").innerHTML = "X";
+                // }
+                // function fourthfun() {
+                //     document.getElementById("fourth").innerHTML = "O";
+                // }
+                // function fifthfun() {
+                //     document.getElementById("fifth").innerHTML = "X";
+                // }
+                // function sixthfun() {
+                //     document.getElementById("sixth").innerHTML = "O";
+                // }
+                // function seventhfun() {
+                //     document.getElementById("seventh").innerHTML = "X";
+                // }
+                // function eighthfun() {
+                //     document.getElementById("eigth").innerHTML = "O";
+                // }
+                // function ninthfun() {
+                //     document.getElementById("ninth").innerHTML = "X";
+                    
+                // }
+          </script>
         </body>
     </html>
-  </body>
+
+<!-- Setting up the website-->
+<!--First thing we'll have to do is make boxes, and bootstrap should help us with that-->
+
+</body>
 </html>

@@ -1,5 +1,22 @@
+h1 {
+  text-align: center;
+}
 td {
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    }
+  width: 100px;
+  height: 100px;
+}
+table {
+  margin: 5px auto;
+}
+.vert {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.hori {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.gameContainer{
+    width: 250px;
+    margin: 200px auto;
+}
