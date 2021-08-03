@@ -1,15 +1,10 @@
 # Deep-Sky-Blue
 
-Nikhil Desai
-Kaavya Mahendran
-Angie Abraham
-Joseph Sparks
-Joshua Gunsalus
 <div class="line"></div>
 <div class="wrapper">
   <header role="banner">
     <nav role="navigation">
-      <h1><a href="#">Potato</a></h1>
+      <h1><a href="#">Back To TicTacToe</a></h1>
     </nav>
   </header>
   <main role="main">
@@ -32,45 +27,44 @@ Joshua Gunsalus
       <article>
         <h1>Joshua Gunsalus</h1>
         <p style="color:#ECD574;border-width:10px;border-style:solid;border-color:brown;"> About Joshua Gunsalus 
-        <a class="https://en.wikipedia.org/wiki/Genetically_modified_potato" href="#">more...</a> </p> 
+        <a class="https://en.wikipedia.org/wiki/Genetically_modified_potato" href="#">Put a website u like here if you want</a> </p> 
       </article>
       <article>
         <h1>Angie Abraham</h1>
         <p style="color:#ECD574;border-width:10px;border-style:solid;border-color:brown;"> About Angie Abraham
-        <a class="https://www.farming-machine.com/agricultural-machinery/potato-harvester/" href="#">more...</a> </p>
+        <a class="https://www.farming-machine.com/agricultural-machinery/potato-harvester/" href="#">Put a website u like here if you want</a> </p>
       </article>
       <article>
         <h1>Tanner Altan</h1>
         <p style="color:#ECD574;border-width:10px;border-style:solid;border-color:brown;"> About Tanner Altan
-        <a class="https://en.wikipedia.org/wiki/Genetically_modified_potato" href="#">more...</a> </p> 
+        <a class="https://en.wikipedia.org/wiki/Genetically_modified_potato" href="#">Put a website u like here if you want</a> </p> 
       </article>
       <article>
         <h1>Cindy Lyu</h1>
         <p style="color:#ECD574;border-width:10px;border-style:solid;border-color:brown;"> About Cindy Lyu
-        <a class="https://www.farming-machine.com/agricultural-machinery/potato-harvester/" href="#">more...</a> </p>
+        <a class="https://www.farming-machine.com/agricultural-machinery/potato-harvester/" href="#">Put a website u like here if you want</a> </p>
       </article>
       <article>
         <h1>Apoorv Sagar Pitta</h1>
         <p style="color:#ECD574;border-width:10px;border-style:solid;border-color:brown;"> About Apoorv Sagar Pitta
-        <a class="https://en.wikipedia.org/wiki/Genetically_modified_potato" href="#">more...</a> </p> 
+        <a class="https://en.wikipedia.org/wiki/Genetically_modified_potato" href="#">Put a website u like here if you want</a> </p> 
       </article>
       <article>
         <h1>Kaavya Mahendran</h1>
         <p style="color:#ECD574;border-width:10px;border-style:solid;border-color:brown;"> About Kaavya Mahendran
-        <a class="https://www.farming-machine.com/agricultural-machinery/potato-harvester/" href="#">more...</a> </p>
+        <a class="https://www.farming-machine.com/agricultural-machinery/potato-harvester/" href="#">Put a website u like here if you want</a> </p>
       </article>
       <article>
         <h1>Henry Goldrich</h1>
         <p style="color:#ECD574;border-width:10px;border-style:solid;border-color:brown;"> About Henry Goldrich
-        <a class="https://www.farming-machine.com/agricultural-machinery/potato-harvester/" href="#">more...</a> </p>
+        <a class="https://www.farming-machine.com/agricultural-machinery/potato-harvester/" href="#">Put a website u like here if you want</a> </p>
       </article>
     </section>
     <section class="sec-partners" role="section">
       <hr />
-      <h1>IDK</h1>
       <div class="row">
         <div class="logo-container">
-          <img src="https://i.imgur.com/ZZjeIP3.png" alt="Wii logo" />
+          <img src="https://wallpapercave.com/wp/7VxoEfV.jpg" alt="Deep Sky Blue" />
         </div>
       </div>
     </section>
@@ -80,7 +74,9 @@ Joshua Gunsalus
 <footer>
   <nav role="navigation">
     <ul class="nav-ul">
-        <a class=BackToTicTacToe href="#">more...</a>
+    <h1>
+        <a class=LinkFortictactoewebsitehere href="#">Back To TicTacToe</a>
+        </h1>
     </ul>
   </nav>
   <p class="copy">&copy; Potato Designer 2021</p>
