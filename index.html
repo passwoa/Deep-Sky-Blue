@@ -45,32 +45,37 @@
     
         <body>
             <script type="text/javascript">
+
+            var letters = ["X", "Y"];
+
+            
+
                     function firstfun() {
-                        document.getElementById("first").innerHTML = "X";
+                        document.getElementById("first").innerHTML = letters[Math.floor(Math.random()* letters.length)];
                     }
                     function secondfun() {
-                        document.getElementById("second").innerHTML = "O";
+                        document.getElementById("second").innerHTML = letters[Math.floor(Math.random()* letters.length)];
                     }
                     function thirdfun() {
-                        document.getElementById("third").innerHTML = "X";
+                        document.getElementById("third").innerHTML = letters[Math.floor(Math.random()* letters.length)];
                     }
                     function fourthfun() {
-                        document.getElementById("fourth").innerHTML = "O";
+                        document.getElementById("fourth").innerHTML = letters[Math.floor(Math.random()* letters.length)];
                     }
                     function fifthfun() {
-                        document.getElementById("fifth").innerHTML = "X";
+                        document.getElementById("fifth").innerHTML = letters[Math.floor(Math.random()* letters.length)];
                     }
                     function sixthfun() {
-                        document.getElementById("sixth").innerHTML = "O";
+                        document.getElementById("sixth").innerHTML = letters[Math.floor(Math.random()* letters.length)];
                     }
                     function seventhfun() {
-                        document.getElementById("seventh").innerHTML = "X";
+                        document.getElementById("seventh").innerHTML = letters[Math.floor(Math.random()* letters.length)];
                     }
                     function eighthfun() {
-                        document.getElementById("eigth").innerHTML = "O";
+                        document.getElementById("eigth").innerHTML = letters[Math.floor(Math.random()* letters.length)];
                     }
                     function ninthfun() {
-                        document.getElementById("ninth").innerHTML = "X";
+                        document.getElementById("ninth").innerHTML = letters[Math.floor(Math.random()* letters.length)];
                     }
             </script>
             <div style="transform: translateX(20px);">
@@ -88,47 +93,4 @@
                 <button id="ninth" onclick="ninthfun()" class="btn btn-default btn-lg">-</button>
                 </div>
         </body>
-    </html>
-
-<!-- Setting up the website-->
-<!--First thing we'll have to do is make boxes, and bootstrap should help us with that-->
-<h1>Tic Tac Toe</h1>
-<table>
-  <tr>
-    <td></td>
-    <td class="vert"></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="hori"></td>
-    <td class="vert hori"></td>
-    <td class="hori"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td class="vert"></td>
-    <td></td>
-  </tr>
-</table>
-<style>
-    h1 {
-  text-align: center;
-}
-td {
-  width: 100px;
-  height: 100px;
-}
-table {
-  margin: 5px auto;
-}
-.vert {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-}
-.hori {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-</style>
-</body>
 </html>
