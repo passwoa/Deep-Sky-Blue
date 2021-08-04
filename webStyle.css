@@ -1,6 +1,6 @@
     h1 {text-align: center;
     background-color: deepskyblue;
-    border-bottom: dashed;
+    border: dashed;
     border-width: 2px;
     }
     .landscape {
