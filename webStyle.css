@@ -3,6 +3,9 @@
     border-width: 2px;
     background-color: #FFD300;
     }
+    .center {
+        text-align: center;
+    }
     .landscape {
         width: 400px;
         height: 300px;
@@ -17,12 +20,11 @@
     }
     .right {
         float: right;
-        margin-left: 20px;
+        margin-left: 50px;
     }
     .card {
         padding: 20px;
         margin-top: 20px;
-        margin-left: 50px;
         overflow: auto;
         background-color: #FFD300;
 
