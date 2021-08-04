@@ -1,7 +1,7 @@
     h1 {text-align: center;
-    background-color: rgb(212, 199, 11);
     border: dashed;
     border-width: 2px;
+    background-color: #FFD300;
     }
     .landscape {
         width: 400px;
@@ -34,3 +34,9 @@
         font-size: 24px;
         font-family: 'Courier New', Courier, monospace
     }   
+    p {
+        background-color: white;
+    }
+    .card-text {
+        background-color: #FFD300;
+    }
