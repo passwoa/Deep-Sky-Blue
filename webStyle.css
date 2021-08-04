@@ -34,9 +34,7 @@
         font-size: 24px;
         font-family: 'Courier New', Courier, monospace
     }   
-    p {
-        background-color: white;
-    }
     .card-text {
         background-color: #FFD300;
+        font-size: 16px;
     }
