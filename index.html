@@ -93,29 +93,35 @@
     function checkForWin() {
       var playerXWon = false;
       var buttons = document.getElementsByClassName("btn");
-      if (buttons[0].textContent == buttons[1].textContent && buttons[0].textContent == buttons[2].textContent) {
-
+      if (buttons[0].textContent == buttons[1].textContent && buttons[0].textContent == buttons[2].textContent && buttons[0].textContent != "-") {
+        resetGame();
       }
-      if (buttons[0].textContent == buttons[3].textContent && buttons[0].textContent == buttons[6].textContent) {
-
+      if (buttons[0].textContent == buttons[3].textContent && buttons[0].textContent == buttons[6].textContent && buttons[0].textContent != "-") {
+        resetGame();
       }
-      if (buttons[3].textContent == buttons[5].textContent && buttons[3].textContent == buttons[6].textContent) {
-
+      if (buttons[3].textContent == buttons[5].textContent && buttons[3].textContent == buttons[6].textContent && buttons[3].textContent != "-") {
+        resetGame();
       }
-      if (buttons[6].textContent == buttons[7].textContent && buttons[6].textContent == buttons[8].textContent) {
-
+      if (buttons[6].textContent == buttons[7].textContent && buttons[6].textContent == buttons[8].textContent && buttons[6].textContent != "-") {
+        resetGame();
       }
-      if (buttons[1].textContent == buttons[4].textContent && buttons[1].textContent == buttons[7].textContent) {
-
+      if (buttons[1].textContent == buttons[4].textContent && buttons[1].textContent == buttons[7].textContent && buttons[1].textContent != "-") {
+        resetGame();
       }
-      if (buttons[2].textContent == buttons[5].textContent && buttons[2].textContent == buttons[8].textContent) {
-
+      if (buttons[2].textContent == buttons[5].textContent && buttons[2].textContent == buttons[8].textContent && buttons[2].textContent != "-") {
+        resetGame();
       }
-      if (buttons[0].textContent == buttons[4].textContent && buttons[0].textContent == buttons[8].textContent) {
-
+      if (buttons[0].textContent == buttons[4].textContent && buttons[0].textContent == buttons[8].textContent && buttons[0].textContent != "-") {
+        resetGame();
       }
-      if (buttons[2].textContent == buttons[4].textContent && buttons[0].textContent == buttons[6].textContent) {
-
+      if (buttons[2].textContent == buttons[4].textContent && buttons[0].textContent == buttons[6].textContent && buttons[2].textContent != "-") {
+        resetGame();
+      }
+    }
+    function resetGame(){
+      for (let button of document.getElementsByClassName("btn")) {
+        button.classList.remove('disabled');
+        button.textContent = "-"
       }
     }
 
