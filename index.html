@@ -36,39 +36,46 @@
       </div>
     </div>
   </nav>
-  <div class="gameContainer">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <button class="btn btn-default btn-lg hori vert">-</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-default btn-lg hori vert">-</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-default btn-lg hori vert">-</button>
-        </div>
+  <div class='gameContainer container'>
+    <div class='row'>
+      <div class='col'>
+        <button type="button" class="btn btn-outline-primary btn-lg reset">Reset Game</button>
       </div>
-      <div class="row">
-        <div class="col">
-          <button class="btn btn-default btn-lg hori vert">-</button>
+    </div>
+    <div class='row'>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-default btn-lg hori vert cell">-</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-default btn-lg hori vert cell">-</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-default btn-lg hori vert cell">-</button>
+          </div>
         </div>
-        <div class="col">
-          <button class="btn btn-default btn-lg hori vert">-</button>
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-default btn-lg hori vert cell">-</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-default btn-lg hori vert cell">-</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-default btn-lg hori vert cell">-</button>
+          </div>
         </div>
-        <div class="col">
-          <button class="btn btn-default btn-lg hori vert">-</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button class="btn btn-default btn-lg hori vert">-</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-default btn-lg hori vert">-</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-default btn-lg hori vert">-</button>
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-default btn-lg hori vert cell">-</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-default btn-lg hori vert cell">-</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-default btn-lg hori vert cell">-</button>
+          </div>
         </div>
       </div>
     </div>
@@ -78,7 +85,7 @@
     var XW = false;
     var OW = false;
     var draw = false;
-    for (let button of document.getElementsByClassName("btn-default")) {
+    for (let button of document.getElementsByClassName("cell")) {
       button.addEventListener("click", takeTurn, false);
     }
     function takeTurn() {
@@ -98,7 +105,7 @@
       }
     }
     function checkForWin() {
-      var buttons = document.getElementsByClassName("btn");
+      var buttons = document.getElementsByClassName("cell");
       var count = 0;
       if (buttons[0].textContent == "X" && buttons[1].textContent == "X" && buttons[2].textContent == "X") {
         XW = true;
@@ -172,9 +179,13 @@
     }
 
     function resetGame() {
-      for (let button of document.getElementsByClassName("btn")) {
+      for (let button of document.getElementsByClassName("cell")) {
         button.classList.remove('disabled');
-        button.textContent = "-"
+        button.textContent = "-";
+        var currentPlayerIsX = true;
+        var XW = false;
+        var OW = false;
+        var draw = false;
       }
     }
 
