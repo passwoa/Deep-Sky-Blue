@@ -1,7 +1,10 @@
     h1 {text-align: center;
-    background-color: rgb(212, 199, 11);
     border: dashed;
     border-width: 2px;
+    background-color: #FFD300;
+    }
+    .center {
+        text-align: center;
     }
     .landscape {
         width: 400px;
@@ -17,12 +20,11 @@
     }
     .right {
         float: right;
-        margin-left: 20px;
+        margin-left: 50px;
     }
     .card {
         padding: 20px;
         margin-top: 20px;
-        margin-left: 50px;
         overflow: auto;
         background-color: #FFD300;
 
@@ -33,7 +35,11 @@
     body {
         background-color: deepskyblue;
         font-size: 24px;
-        font-family: 'Courier New', Courier, monospace
+        font-family: 'Courier New', Courier, monospace;
+    }   
+    .card-text {
+        background-color: #FFD300;
+        font-size: 16px;
     }
     .image-card {
         display: flex;
