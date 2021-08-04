@@ -8,14 +8,12 @@ h1 {
 .hori {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  margin-top: 30px;
+  height: 100px;
+  width: 100px;
 }
 .gameContainer{
     width: 400px;
     margin: 200px auto;
 }
 
-.btn {
-  margin-top: 30px;
-  height: 100px;
-  width: 100px;
-}
