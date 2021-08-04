@@ -82,8 +82,10 @@
       this.classList.add('disabled');
       if (currentPlayerIsX) {
         this.textContent = "X";
+        this.style.color = 'black';
       } else {
         this.textContent = "O";
+        this.style.color = 'red';
       }
       checkForWin();
 
@@ -91,32 +93,81 @@
       
     }
     function checkForWin() {
-      var playerXWon = false;
       var buttons = document.getElementsByClassName("btn");
-      if (buttons[0].textContent == buttons[1].textContent && buttons[0].textContent == buttons[2].textContent && buttons[0].textContent != "-") {
-        resetGame();
+      var XW = false;
+      var OW = false;
+      var count = 0;
+      if (buttons[0].textContent == "X" && buttons[1].textContent == "X" && buttons[2].textContent == "X") {
+        alert("X's won");
+        XW = true;
       }
-      if (buttons[0].textContent == buttons[3].textContent && buttons[0].textContent == buttons[6].textContent && buttons[0].textContent != "-") {
-        resetGame();
+      else if (buttons[0].textContent == "X" && buttons[3].textContent == "X" && buttons[6].textContent == "X") {
+        alert("X's won");
+        XW = true;
       }
-      if (buttons[3].textContent == buttons[5].textContent && buttons[3].textContent == buttons[6].textContent && buttons[3].textContent != "-") {
-        resetGame();
+      else if (buttons[6].textContent == "X" && buttons[7].textContent == "X" && buttons[8].textContent == "X") {
+        alert("X's won");
+        XW = true;
       }
-      if (buttons[6].textContent == buttons[7].textContent && buttons[6].textContent == buttons[8].textContent && buttons[6].textContent != "-") {
-        resetGame();
+      else if (buttons[1].textContent == "X" && buttons[4].textContent == "X" && buttons[7].textContent == "X") {
+        alert("X's won");
+        XW = true;
       }
-      if (buttons[1].textContent == buttons[4].textContent && buttons[1].textContent == buttons[7].textContent && buttons[1].textContent != "-") {
-        resetGame();
+      else if (buttons[2].textContent == "X" && buttons[5].textContent == "X" && buttons[8].textContent == "X") {
+        alert("X's won");
+        XW = true;
       }
-      if (buttons[2].textContent == buttons[5].textContent && buttons[2].textContent == buttons[8].textContent && buttons[2].textContent != "-") {
-        resetGame();
+      else if (buttons[0].textContent == "X" && buttons[4].textContent == "X" && buttons[8].textContent == "X") {
+        alert("X's won");
+        XW = true;
       }
-      if (buttons[0].textContent == buttons[4].textContent && buttons[0].textContent == buttons[8].textContent && buttons[0].textContent != "-") {
-        resetGame();
+      else if (buttons[2].textContent == "X" && buttons[4].textContent == "X" && buttons[6].textContent == "X") {
+        alert("X's won");
+        XW = true;
       }
-      if (buttons[2].textContent == buttons[4].textContent && buttons[0].textContent == buttons[6].textContent && buttons[2].textContent != "-") {
-        resetGame();
+      else {
+        if (buttons[0].textContent == "O" && buttons[1].textContent == "O" && buttons[2].textContent == "O") {
+          alert("O's won");
+          OW = true;
+        }
+        else if (buttons[0].textContent == "O" && buttons[3].textContent == "O" && buttons[6].textContent == "O") {
+          alert("O's won");
+          OW = true;
+        }
+        else if (buttons[6].textContent == "O" && buttons[7].textContent == "O" && buttons[8].textContent == "O") {
+          alert("O's won");
+          OW = true;
+        }
+        else if (buttons[1].textContent == "O" && buttons[4].textContent == "O" && buttons[7].textContent == "O") {
+          alert("O's won");
+          OW = true;
+        }
+        else if (buttons[2].textContent == "O" && buttons[5].textContent == "O" && buttons[8].textContent == "O") {
+          alert("O's won");
+          OW = true;
+        }
+        else if (buttons[0].textContent == "O" && buttons[4].textContent == "O" && buttons[8].textContent == "O") {
+          alert("O's won");
+          OW = true;
+        }
+        else if (buttons[2].textContent == "O" && buttons[4].textContent == "O" && buttons[6].textContent == "O") {
+          alert("O's won");
+          OW = true;
+        }
       }
+      if (XW != true && OW != true) {
+        for (let i = 0; i <= 8; i++) {
+          if(buttons[i].textContent != "-") {
+            count++;
+          }
+        }
+        if(count == 9) {
+          alert("Draw");
+        }
+      }
+      // if (buttons[0].textContent != "-" && buttons[1].textContent != "-" && buttons[2].textContent != "-" && buttons[3].textContent != "-" && buttons[4].textContent != "-" && buttons[5].textContent != "-" && buttons[6].textContent != "-" && buttons[7].textContent != "-" && buttons[8].textContent != "-" && XW != true && OW != true) {
+      //   alert("Draw");
+      // }
     }
     function resetGame(){
       for (let button of document.getElementsByClassName("btn")) {
