@@ -77,8 +77,10 @@
       this.classList.add('disabled');
       if (currentPlayerIsX) {
         this.textContent = "X";
+        this.style.color = "black"
       } else {
         this.textContent = "O";
+        this.style.color = "red"
       }
       checkForWin();
 
