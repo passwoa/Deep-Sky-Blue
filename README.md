@@ -1,24 +1,18 @@
+<head>
+    <div><h2>TicTacToe Creator Page</h2></div>
 </head>
-  
-<body>
-    <div>
-        <h2>TicTacToe Creator Page</h2>
-    </div>
-</body>
 
+<footer>
+
+  <nav role="navigation">
+    <ul class="nav-ul">
+    <h1>
+        <a class=LinkFortictactoewebsitehere href="#">Back To TicTacToe</a>
+        </h1>
+    </ul>
+  </nav>
   
 </html>
-<div class="line"></div>
-<div class="wrapper">
-  <header role="banner">
-    <nav role="navigation">
-      <h1><a href="#">Back To TicTacToe</a></h1>
-    </nav>
-  </header>
-  <main role="main">
-    <section class="sec-intro" role="section">
-      <img src="https://th.bing.com/th/id/R.e06400232552ee84d5105f84cf72ef3c?rik=0Z7mradfJTLE6g&riu=http%3a%2f%2fcdn.iwastesomuchtime.com%2f4212013032984.gif&ehk=xMPFlVN7kw0F1wFsLo0p11E2690o%2fm3MVCRXP5Yf77s%3d&risl=&pid=ImgRaw" alt="Potato" /> 
-    </section>
     <section class="sec-events" role="section">
       <hr />
       <h1>About the Creators</h1>
