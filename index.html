@@ -36,14 +36,23 @@
       </div>
     </div>
   </nav>
-  <div class='gameContainer container'>
-    <div class='row'>
-      <div class='col'>
-        <button type="button" class="btn btn-outline-primary btn-lg reset">Reset Game</button>
+  <div class='container'>
+    <div class = 'row'>
+      <div class="col title">
+        <div class="card w-auto">
+          <div class="card-body">
+            <h5 class="card-title text-center" id = 'title'>Play Tic Tac Toe</h5>
+            <p class="card-text text-center">Player 1, would you like to be X or O?</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <button class="btn btn-primary me-md-2" type="button">X</button>
+              <button class="btn btn-primary me-md-2" type="button">O</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class='row'>
-      <div class="container">
+      <div class="gameContainer container">
         <div class="row">
           <div class="col">
             <button class="btn btn-default btn-lg hori vert cell">-</button>
@@ -77,6 +86,11 @@
             <button class="btn btn-default btn-lg hori vert cell">-</button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='d-grid col-6 mx-auto reset'>
+        <button type="button" class="btn btn-outline-dark btn-lg" id = 'reset'>Reset Game</button>
       </div>
     </div>
   </div>
@@ -178,10 +192,14 @@
       }
     }
 
+    var reset = document.getElementById('reset');
+    reset.addEventListener('click', resetGame, false);
+
     function resetGame() {
       for (let button of document.getElementsByClassName("cell")) {
         button.classList.remove('disabled');
         button.textContent = "-";
+        button.style.color = 'black';
         var currentPlayerIsX = true;
         var XW = false;
         var OW = false;
