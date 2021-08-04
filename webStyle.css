@@ -1,5 +1,5 @@
     h1 {text-align: center;
-    background-color: deepskyblue;
+    background-color: rgb(212, 199, 11);
     border: dashed;
     border-width: 2px;
     }
@@ -23,7 +23,7 @@
         padding: 20px;
         margin-top: 20px;
         overflow: auto;
-        background-color: yellow;
+        background-color: rgb(204, 192, 30);
     }
     /* img{
         display: inline;
