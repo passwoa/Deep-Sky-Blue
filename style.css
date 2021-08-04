@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+.vert {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.hori {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.gameContainer{
+    width: 400px;
+    margin: 200px auto;
+}
+
+.btn {
+  margin-top: 30px;
+  height: 100px;
+  width: 100px;
+}

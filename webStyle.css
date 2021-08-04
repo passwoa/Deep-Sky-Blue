@@ -1,0 +1,44 @@
+    h1 {text-align: center;
+    border: dashed;
+    border-width: 2px;
+    background-color: #FFD300;
+    }
+    .landscape {
+        width: 400px;
+        height: 300px;
+    }
+    .portrait {
+        width: 300px;
+        height: 400px;
+    }
+    .left{
+        float: left;
+        margin-right: 20px;
+    }
+    .right {
+        float: right;
+        margin-left: 20px;
+    }
+    .card {
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+        overflow: auto;
+        background-color: #FFD300;
+
+    }
+    /* img{
+        display: inline;
+    } */
+    body {
+        background-color: deepskyblue;
+        font-size: 24px;
+        font-family: 'Courier New', Courier, monospace
+    }   
+    .card-text {
+        background-color: #FFD300;
+        font-size: 16px;
+    }
+    .image-card {
+        display: flex;
+    }
