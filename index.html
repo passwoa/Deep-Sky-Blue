@@ -6,72 +6,6 @@
 
 <link rel="stylesheet" href="style.css">
 
-<title>Tic Tac Toe Website</title>
-
-</head>
-
-<body>
-<h1>Tic-Tac-Toe</h1>
-
-<p>Setting up website</p>
-
-<!-- Setting up the website-->
-<!--First thing we'll have to do is make boxes, and bootstrap should help us with that-->
-<h1>Tic Tac Toe</h1>
-<table>
-  <tr>
-    <td></td>
-    <td class="vert"></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="hori"></td>
-    <td class="vert hori"></td>
-    <td class="hori"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td class="vert"></td>
-    <td></td>
-  </tr>
-</table>
-<style>
-    h1 {
-  text-align: center;
-}
-td {
-  width: 100px;
-  height: 100px;
-}
-table {
-  margin: 5px auto;
-}
-.vert {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-}
-.hori {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-</style>
-<table>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
 
 </body>
 
@@ -81,14 +15,13 @@ table {
 
   <link rel="stylesheet" href="style.css">
 
-  <title>Tic Tac Toe Website</title>
+  <title>Tic-Tac-Toe Website</title>
 </head>
 
 <body>
-  <h3 style="transform: translateX(20px);">Tic Tac Toe</h3>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tic Tac Toe</a>
+      <a class="navbar-brand" href="#">Tic-Tac-Toe</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -142,17 +75,20 @@ table {
   </div>
   <script type="text/javascript">
     var currentPlayerIsX = true;
-    for (let button of document.getElementsByClassName("btn")) {
+    for (let button of document.getElementsByClassName("btn-default")) {
       button.addEventListener("click", takeTurn, false);
     }
     function takeTurn() {
+      this.classList.add('disabled');
       if (currentPlayerIsX) {
         this.textContent = "X";
       } else {
         this.textContent = "O";
       }
       checkForWin();
+
       currentPlayerIsX = !currentPlayerIsX;
+      
     }
     function checkForWin() {
       var playerXWon = false;
