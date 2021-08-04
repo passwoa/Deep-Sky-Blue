@@ -1,4 +1,10 @@
-<h1><div><span style="color:#00ffd7;">C</span><span style="color:#00f7eb;">r</span><span style="color:#00eeff;">e</span><span style="color:#00d2ff;">a</span><span style="color:#00b5ff;">t</span><span style="color:#00a6ff;">o</span><span style="color:#0097ff;">r</span><span style="color:#0088ff;"> </span><span style="color:#076fec;">P</span><span style="color:#0d55d9;">a</span><span style="color:#2e2bec;">g</span><span style="color:#4f00ff;">e</span></div></h1>
+</head>
+  
+<body>
+    <div>
+        <h2>TicTacToe Creator Page</h2>
+    </div>
+</body>
 
   
 </html>
