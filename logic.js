@@ -115,9 +115,11 @@ function endGame() {
   }
   else if (XW == true) {
     message.innerText = 'Player X won! Press the reset button to play again.';
+    message.style.color = 'green'
   }
   else if (OW == true) {
     message.innerText = 'Player O won! Press the reset button to play again.';
+    message.style.color = 'green'
   }
 }
 
@@ -134,5 +136,6 @@ function resetGame() {
     OW = false;
     draw = false;
     message.innerText = 'Choose a symbol for player 1 to start';
+    message.style.color = 'black';
   }
 }
