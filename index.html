@@ -37,19 +37,22 @@
     </div>
   </nav>
   <div class='container'>
-    <div class = 'row'>
+    <div class='row'>
       <div class="col title">
         <div class="card w-auto">
           <div class="card-body">
-            <h5 class="card-title text-center" id = 'title'>Play Tic Tac Toe</h5>
+            <h5 class="card-title text-center" id='title'>Play Tic Tac Toe</h5>
             <p class="card-text text-center">Player 1, would you like to be X or O?</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-              <button class="btn btn-primary me-md-2" type="button">X</button>
-              <button class="btn btn-primary me-md-2" type="button">O</button>
+              <button class="btn btn-primary me-md-2 symbol" type="button">X</button>
+              <button class="btn btn-primary me-md-2 symbol" type="button">O</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class='row'>
+      <div class='col title text-center' id='message'></div>
     </div>
     <div class='row'>
       <div class="gameContainer container">
@@ -90,32 +93,52 @@
     </div>
     <div class='row'>
       <div class='d-grid col-6 mx-auto reset'>
-        <button type="button" class="btn btn-outline-dark btn-lg" id = 'reset'>Reset Game</button>
+        <button type="button" class="btn btn-outline-dark btn-lg" id='reset'>Reset Game</button>
       </div>
     </div>
   </div>
   <script type="text/javascript">
-    var currentPlayerIsX = true;
+    var currentPlayerIsX;
     var XW = false;
     var OW = false;
     var draw = false;
+    var message = document.getElementById('message');
+
+    for (let symbol of document.getElementsByClassName("symbol")) {
+      symbol.addEventListener("click", function () {
+        if (currentPlayerIsX != false && currentPlayerIsX != true) {
+          if (symbol.textContent == 'X') {
+            currentPlayerIsX = true;
+            message.innerText = 'Player 1 is X and player 2 is O';
+          }
+          else if (symbol.textContent == 'O') {
+            currentPlayerIsX = false;
+            message.innerText = 'Player 1 is O and player 2 is X';
+          }
+        }
+      });
+    }
+
     for (let button of document.getElementsByClassName("cell")) {
       button.addEventListener("click", takeTurn, false);
     }
-    function takeTurn() {
-      this.classList.add('disabled');
-      if (XW == false && OW == false) {
-        if (currentPlayerIsX) {
-          this.textContent = "X";
-          this.style.color = 'black';
-        } else {
-          this.textContent = "O";
-          this.style.color = 'red';
-        }
-        checkForWin();
-        endGame();
-        currentPlayerIsX = !currentPlayerIsX;
 
+    function takeTurn() {
+      if (currentPlayerIsX == true || currentPlayerIsX == false) {
+        this.classList.add('disabled');
+        if (XW == false && OW == false) {
+          if (currentPlayerIsX) {
+            this.textContent = "X";
+            this.style.color = 'black';
+          } else {
+            this.textContent = "O";
+            this.style.color = 'red';
+          }
+          checkForWin();
+          endGame();
+          currentPlayerIsX = !currentPlayerIsX;
+
+        }
       }
     }
     function checkForWin() {
@@ -142,6 +165,9 @@
       else if (buttons[2].textContent == "X" && buttons[4].textContent == "X" && buttons[6].textContent == "X") {
         XW = true;
       }
+      else if (buttons[3].textContent == "X" && buttons[4].textContent == "X" && buttons[5].textContent == "X") {
+        XW = true;
+      }
       else {
         if (buttons[0].textContent == "O" && buttons[1].textContent == "O" && buttons[2].textContent == "O") {
           OW = true;
@@ -164,6 +190,9 @@
         else if (buttons[2].textContent == "O" && buttons[4].textContent == "O" && buttons[6].textContent == "O") {
           OW = true;
         }
+        else if (buttons[3].textContent == "O" && buttons[4].textContent == "O" && buttons[5].textContent == "O") {
+          OW = true;
+        }
       }
       if (XW != true && OW != true) {
         for (let i = 0; i <= 8; i++) {
@@ -182,13 +211,13 @@
 
     function endGame() {
       if (draw == true) {
-        alert("Draw");
+        message.innerText = 'There is a tie. Press the reset button to play again.';
       }
       else if (XW == true) {
-        alert('X won');
+        message.innerText = 'Player X won! Press the reset button to play again.';
       }
       else if (OW == true) {
-        alert('O won');
+        message.innerText = 'Player O won! Press the reset button to play again.';
       }
     }
 
@@ -200,10 +229,11 @@
         button.classList.remove('disabled');
         button.textContent = "-";
         button.style.color = 'black';
-        currentPlayerIsX = true;
+        currentPlayerIsX = null;
         XW = false;
         OW = false;
         draw = false;
+        message.innerText = '';
       }
     }
 
