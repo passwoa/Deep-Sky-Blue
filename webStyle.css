@@ -3,6 +3,8 @@
     border-width: 2px;
     background-color: #FFD300;
     }
+    p {font-size: 20px;
+    }
     .center {
         text-align: center;
     }
@@ -29,9 +31,10 @@
         background-color: #FFD300;
 
     }
-    /* img{
-        display: inline;
-    } */
+    img {
+        float: left;
+        margin: 5px;
+    }
     .card-text {
         background-color: #FFD300;
         font-size: 16px;
