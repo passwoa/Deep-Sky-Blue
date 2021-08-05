@@ -32,15 +32,13 @@
     /* img{
         display: inline;
     } */
-    body {
-        background-color: deepskyblue;
-        font-size: 24px;
-        font-family: 'Courier New', Courier, monospace;
-    }   
     .card-text {
         background-color: #FFD300;
         font-size: 16px;
     }
     .image-card {
         display: flex;
+    }
+    .white {
+        color: white;
     }
