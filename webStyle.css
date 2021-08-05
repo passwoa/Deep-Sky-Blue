@@ -42,3 +42,13 @@
     .white {
         color: white;
     }
+
+    .back {
+        display: block;
+        background-color: #FFD300;
+        width: auto;
+        text-align: center;
+        border: dashed;
+        border-width: 2px;
+        margin-left: -40px;
+    }
