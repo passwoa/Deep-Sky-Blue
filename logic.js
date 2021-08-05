@@ -1,9 +1,13 @@
 var currentPlayerIsX;
+// The following three variables record if player x won, if player o won, or if there was a tie
 var XW = false;
 var OW = false;
 var draw = false;
 var message = document.getElementById('message');
 
+// Adding event listners to the x and o buttons player 1 can click on to choose
+// their symbol for the game
+// This will only run if player 1 has not yet selected a symbol
 for (let symbol of document.getElementsByClassName("symbol")) {
   symbol.addEventListener("click", function () {
     if (currentPlayerIsX != false && currentPlayerIsX != true) {
@@ -19,10 +23,15 @@ for (let symbol of document.getElementsByClassName("symbol")) {
   });
 }
 
+// Adding event listeners to each cell in the tic tac toe grid
 for (let button of document.getElementsByClassName("cell")) {
   button.addEventListener("click", takeTurn, false);
 }
 
+// This function is called when a player clicks on a cell in the tic-tac-toe grid
+// It makes the text-content of the cell x or o depending on whose turn it is
+// This will only won if player one has selected a symbol already and if no one has won the game
+// The function also disables buttons once they've been clicked so a player cannot undo or change their turn
 function takeTurn() {
   if (currentPlayerIsX == true || currentPlayerIsX == false) {
     this.classList.add('disabled');
@@ -41,6 +50,10 @@ function takeTurn() {
     }
   }
 }
+
+// This function is called after each players turn
+// It checks every possible combination that a player needs to win the game
+// It also checks for ties
 function checkForWin() {
   var buttons = document.getElementsByClassName("cell");
   var count = 0;
@@ -109,6 +122,9 @@ function checkForWin() {
   // }
 }
 
+// This function is called once the computer has checked to see if anyone has won
+// If someone has won, or if the game is tied, it puts a message on the screen for the 
+// players to see
 function endGame() {
   if (draw == true) {
     message.innerText = 'There is a tie. Press the reset button to play again.';
@@ -123,9 +139,13 @@ function endGame() {
   }
 }
 
+// Puts an event listener on the reset button
 var reset = document.getElementById('reset');
 reset.addEventListener('click', resetGame, false);
 
+// This function is called when the reset button is clicked on
+// It resets the text in each cell of the grid to dashes, resets the message
+// that the players see, and resets all the variables so the players can play again
 function resetGame() {
   for (let button of document.getElementsByClassName("cell")) {
     button.classList.remove('disabled');
